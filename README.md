@@ -168,3 +168,13 @@ https://github.com/github/github-mcp-server
 github MCP
 
 Notion MCP
+
+---
+
+### Notion 파트 설계
+
+Notion 담당은 `Docs/Notion/` 부터 읽는다. 구현 핸드북과 모듈 설계가 있다.
+
+- 시작: `Docs/Notion/README.md`
+- 아키텍처: `Docs/Notion/DESIGN.md`
+- FastAPI는 Notion을 호출하지 않는다. 원본은 Spring DB, Notion은 `.md` 로그 미러다.
