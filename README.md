@@ -174,5 +174,5 @@ Notion MCP
 ### Spring 공개 API 명세
 
 - 공개 REST: `api-specification.md`
-- GitHub 워커 기준으로 고쳐야 할 책임 경계: `spring-api-revision.md`
-- Notion 발행·미러는 Spring 담당. FastAPI는 Notion을 호출하지 않는다.
+- Spring ↔ FastAPI 필수 계약: `spring-api-revision.md`
+- Front는 Spring만 친다. Git·Notion 외부 호출은 FastAPI. 생성 `.md` 는 REST 응답으로 Spring이 받아 DB에 저장한다.
