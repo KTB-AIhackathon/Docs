@@ -171,10 +171,8 @@ Notion MCP
 
 ---
 
-### Notion 파트 설계
+### Spring 공개 API 명세
 
-Notion 담당은 `Docs/Notion/` 부터 읽는다. 구현 핸드북과 모듈 설계가 있다.
-
-- 시작: `Docs/Notion/README.md`
-- 아키텍처: `Docs/Notion/DESIGN.md`
-- FastAPI는 Notion을 호출하지 않는다. 원본은 Spring DB, Notion은 `.md` 로그 미러다.
+- 공개 REST: `api-specification.md`
+- GitHub 워커 기준으로 고쳐야 할 책임 경계: `spring-api-revision.md`
+- Notion 발행·미러는 Spring 담당. FastAPI는 Notion을 호출하지 않는다.
